@@ -87,4 +87,17 @@ struct snake {
 
 extern vector direction_vector[4];
 
+void makeNewSnakePart(snake *player);
+void updateFoodPosition(collision_box *food_box, vector player_position);
+vector add_vector(vector a, vector b);
+vector multiply_vector(vector a, int b);
+int does_overlap(collision_box b1, collision_box b2);
+int same_vector(vector a, vector b);
+int within_dist(vector a, vector b, int dist);
+int offscreen_box(collision_box b);
+void update_collider_position(collision_box *box, vector rel);
+collision_box generate_box(collision_box base, vector pos);
+vector bound_vector(vector a, u16 width, u16 height);
+void add_to_queue(queue *queue, vector vec, enum direction dir);
+
 #endif

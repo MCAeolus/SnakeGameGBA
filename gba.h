@@ -122,6 +122,8 @@ void waitForVBlank(void);
 // ---------------------------------------------------------------------------
 #define UNUSED(param) ((void)((param)))
 
+extern int __qran_seed;
+
 /*
  * Generates a pseudo-random number between min and max, inclusive.
  *

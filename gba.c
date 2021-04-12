@@ -12,7 +12,7 @@ void waitForVBlank(void)
     vBlankCounter++; //increment vblankcounter
 }
 
-static int __qran_seed = 42;
+int __qran_seed = 42;
 static int qran(void)
 {
     __qran_seed = 1664525 * __qran_seed + 1013904223;
